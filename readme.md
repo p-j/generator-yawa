@@ -14,7 +14,7 @@ Yeoman generator that scaffolds out a front-end web app, based on the official [
 * Optional - RequireJS
 * Optional - Twitter Bootstrap for SASS
 * Optional - Leaner Modernizr builds
-* Optional - [GroundworkCSS](https://github.com/groundworkcss/groundwork) : a fully responsive HTML5, CSS and Javascript toolkit created by @ghepting.
+* Optional - [GroundworkCSS](https://github.com/groundworkcss/groundwork) : a fully responsive HTML5, CSS and Javascript toolkit created by [@ghepting](https://twitter.com/ghepting).
 
 For more information on what `generator-yawa` can do for you, take a look at the [Grunt tasks](https://github.com/yeoman/generator-yawa/blob/master/app/templates/_package.json) used in our `package.json`.
 
