@@ -20,10 +20,15 @@ For more information on what `generator-yawa` can do for you, take a look at the
 
 ## Getting Started
 
+**TODO**
+
 - Install: `npm install -g generator-yawa`
 - Run: `yo yawa`
 - Run `grunt build` for building and `grunt server` for preview
 
+**/TODO**
+
+For testing purpose, you can clone the repo and `npm link` before `yo yawa`.
 
 ## Options
 
