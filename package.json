@@ -12,7 +12,12 @@
   ],
   "homepage": "https://github.com/p-j/generator-yawa",
   "bugs": "https://github.com/p-j/generator-yawa/issues",
-  "author": "Chrome Developer Relations",
+  "author": {
+    "name": "Jeremie Parker",
+    "email": "github@jeremie-parker.com",
+    "web": "http://jeremie-parker.com",
+    "twitter": "jeremie_parker"
+  }
   "main": "app/index.js",
   "repository": {
     "type": "git",
