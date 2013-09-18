@@ -3,7 +3,10 @@ Description:
 
 Options:
     Twitter Bootstrap: Include Twitter Bootstrap for Sass
+    Groundwork: Include Groundwork, a SASS/Coffee framework
     RequireJS: Add support for AMD-loading via RequireJS
+    Modernizr
+
 
 Example:
     yo yawa
