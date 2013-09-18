@@ -1,0 +1,327 @@
+@import "groundwork/src/scss/core/constants";
+
+// =============================================
+//                  Web Fonts
+// =============================================
+
+$web-font-classes:          true;
+$web-font-names:            "source-sans-pro"
+                            "museo-slab"
+                            "quicksand";
+$web-font-files:            "sourcesanspro-regular-webfont"
+                            "museo-slab-500-webfont"
+                            "quicksand-regular-webfont";
+$placeholder-fonts:         true;
+$placeholderText-fallback:  true; // noscript fallback for placeholderText.js
+$placeholder-font-classes:  true;
+$placeholder-font-names:    "redacted"
+                            "redacted-script"
+                            "redacted-script-light"
+                            "redacted-script-bold";
+$placeholder-font-files:    "redacted-regular"
+                            "redacted-script-regular"
+                            "redacted-script-light"
+                            "redacted-script-bold";
+
+// =============================================
+//                 Color Palette
+// =============================================
+
+$white:                     #ffffff;
+$black:                     #111111;
+
+// document
+$background-color:          #ffffff;
+$font-color:                #2b2b2d;
+
+// links
+$link-color:                #489AC1;
+$link-active:               #198D98;
+
+// selection highlight
+$selection-color:           $link-color;
+$selection-text:            #ffffff;
+
+// code
+$code-text:                 #555555;
+$code-background:           #ffffff;
+
+// borders
+$border-thickness:          1px;
+$border-style:              solid;
+$border-color:              #dddddd;
+$border:                    #{$border-thickness} #{$border-style} #{$border-color};
+
+// buttons
+$button-color:              lighten(gray, 32.5%);
+$button-text:               darken(gray, 15%);
+$button-border-color:       lighten(gray, 27.5%);
+$button-active:             lighten(gray, 27.5%);
+$button-active-text:        darken(gray, 12%);
+
+// navigation
+$nav-color:                 lighten(gray, 32.5%);
+$nav-text:                  darken(gray, 15%);
+$nav-border-color:          lighten(gray, 27.5%);
+$nav-active:                lighten(gray, 27.5%);
+$nav-active-text:           darken(gray, 12%);
+
+// tabs
+$tab-color:                 lighten(gray, 32.5%);
+$tab-text:                  darken(gray, 15%);
+$tab-border-color:          lighten(gray, 22.5%);
+$tab-active:                lighten(gray, 27.5%);
+$tab-active-text:           darken(gray, 12%);
+$tabpanel-background:       #ffffff;
+$tabpanel-text:             #2b2b2d;
+
+// info
+$info-color:                #3a87ad;
+$info-text:                 #ffffff;
+$info-background:           #d9edf7;
+$info-border:               #bce8f1;
+
+// alert
+$alert-color:               #c09853;
+$alert-text:                #ffffff;
+$alert-background:          #fcf8e3;
+$alert-border:              #fbeee0;
+
+// error
+$error-color:               #b94a48;
+$error-text:                #ffffff;
+$error-background:          #f2dede;
+$error-border:              #eed3d7;
+
+// warning
+$warning-color:             #FF971E;
+$warning-text:              #ffffff;
+$warning-background:        #FFE5C7;
+$warning-border:            #FFDBB3;
+
+// success
+$success-color:             #468847;
+$success-text:              #ffffff;
+$success-background:        #dff0d8;
+$success-border:            #d6e9c6;
+
+// question
+$question-color:            #9855b4;
+$question-text:             #ffffff;
+$question-background:       #f0e6f4;
+$question-border:           #f1dbfa;
+
+// disabled
+$disabled-color:            #808080;
+$disabled-text:             #dddddd;
+$disabled-background:       lighten($disabled-color, 20%);
+$disabled-border:           darken($disabled-color, 10%);
+
+// modifier states
+$state-name:                "info"       "alert"       "warning"       "error"       "success"       "question"       "disabled";
+$state-code:                $info-color  $alert-color  $warning-color  $error-color  $success-color  $question-color  $disabled-color;
+$state-text:                $info-text   $alert-text   $warning-text   $error-text   $success-text   $question-text   $disabled-text;
+
+// modifier colors
+$yellow:                    #f1c40f;
+$orange:                    #e67e22;
+$red:                       #e74c3c;
+$pink:                      #f02475;
+$purple:                    #9b59b6;
+$asphalt:                   #34495e;
+$charcoal:                  #383636;
+$blue:                      #3498db;
+$turquoise:                 #1abc9c;
+$green:                     #2ecc71;
+
+$modifier-name:             "green"   "blue"   "purple"   "yellow"   "orange"   "red"   "pink"   "turquoise"   "asphalt"  "charcoal"  "white"   "black";
+$modifier-code:             $green    $blue    $purple    $yellow    $orange    $red    $pink    $turquoise    $asphalt   $charcoal   $white    $black;
+$modifier-text:             $white    $white   $white     $white     $white     $white  $white   $white        $white     $white      $black    $white;
+
+
+// =============================================
+//                 Grid System
+// =============================================
+
+// grid
+$numerators:                "one"    "two"    "three"  "four"    "five"   "six"    "seven"    "eight"   "nine"   "ten"    "eleven"    "twelve";
+$denominators:              "whole"  "half"   "third"  "fourth"  "fifth"  "sixth"  "seventh"  "eighth"  "ninth"  "tenth"  "eleventh"  "twelfth";
+$denominators-plural:       "wholes" "halves" "thirds" "fourths" "fifths" "sixths" "sevenths" "eighths" "ninths" "tenths" "elevenths" "twelfths";
+$grid-classes:              true;
+$grid-adapter-classes:      true;
+$grid-adapters:             $one-whole $one-half $one-third $one-fourth $one-fifth;
+$grid-adapters-clearfix:    15;
+$container-width:           1200px;
+$gutter:                    10px;
+$responsive:                true;
+
+
+// =============================================
+//                  Breakpoints
+// =============================================
+
+// breakpoints
+$small-mobile:              "(max-width: 319px)";
+$iphone:                    "(min-device-width: 320px) and (max-device-width: 480px)";
+$iphone5:                   "(min-device-width: 320px) and (max-device-width: 568px)";
+$mobile:                    "(max-width: 480px)";
+$not-mobile:                "(min-width: 481px)";
+$small-tablet:              "(max-width: 767px)";
+$tablet:                    "(min-width: 768px)";
+$ipad:                      "(min-width: 768px) and (max-width:1024px)";
+$retina-ipad:               "(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)";
+$not-desktop:               "(max-width: 1024px)";
+$desktop:                   "(min-width: 1025px)";
+$retina:                    "(-webkit-min-device-pixel-ratio: 2)";
+
+
+// =============================================
+//                   Flexbox
+// =============================================
+
+// flexible box layout
+$flexbox-classes:           true; //enable output of flexbox classes
+$flexbox-helpers:           "flex-wrapper" "flex-box" "vertical-center";
+
+
+// =============================================
+//                   Buttons
+// =============================================
+
+$button-tags:               true;
+$button-classes:            true;
+$button-modifiers:          "small" "large" "on" "active" "square" "round" "block";
+$button-states:             "on" "active" "selected" "pressed" "disabled" "info" "alert" "warning" "error" "success" "question";
+$aria-selectors:            true;
+$aria-states:               "selected" "pressed" "disabled" "readonly" "invalid";
+
+
+// =============================================
+//                  Animations
+// =============================================
+
+// dismissible message animation
+$dismiss-animation:         "fadeOut";
+
+// animations
+$bounce-animations:         true;
+$fade-animations:           true;
+$flash-animations:          true;
+$flip-animations:           true;
+$hinge-animations:          true;
+$lightspeed-animations:     true;
+$pulse-animations:          true;
+$roll-animations:           true;
+$rotate-animations:         true;
+$shake-animations:          true;
+$spin-animations:           true;
+$spin-helpers:              "spin" "spin-once" "spin-twice" "spin-thrice"
+                            "spin-fast" "spin-fast-once" "spin-fast-twice" "spin-fast-thrice"
+                            "spin-slow" "spin-slow-once" "spin-slow-twice" "spin-slow-thrice";
+$swing-animations:          true;
+$tada-animations:           true;
+$wiggle-animations:         true;
+$wobble-animations:         true;
+
+
+// =============================================
+//                 Typography
+// =============================================
+
+$type-tags:                 true;
+$type-elements:             "h1" "h2" "h3" "h4" "h5" "h6" "p"
+                            "ul" "ol" "dl"
+                            "q" "quote" "blockquote" "cite"
+                            "small" "big"
+                            "b" "strong"
+                            "em"
+                            "sup" "sub"
+                            "del" "strike"
+                            "code" "pre";
+$type-colors:               true;
+$type-classes:              false;
+$type-classnames:           "h1" "h2" "h3" "h4" "h5" "h6" "p"
+                            "ul" "ol" "dl"
+                            "q" "quote" "blockquote" "cite"
+                            "small" "big" "large"
+                            "b" "bold" "strong"
+                            "em" "italic"
+                            "sup" "sub"
+                            "del" "strike"
+                            "code" "pre"
+                            "invalid" "valid"
+                            "unstyled";
+$styled-lists:              true;
+$multi-column-classes:      true;
+$multi-column-names:        "one-column" "two-column" "three-column" "four-column" "five-column";
+$ui-states:                 "info"  "alert" "warning" "error" "success" "question";
+$ui-icons:                  "\f05a" "\f06a" "\f071"   "\f057" "\f058"   "\f059";
+$ui-states-colors:          $info-color $alert-color $warning-color $error-color $success-color $question-color;
+$font-family:               Helvetica, Arial, Geneva, sans-serif;
+$font-size:                 14px;
+$line-height:               1.5;
+$heading-line-height:       1.3;
+$headings-font:             nth($web-font-names, 1);
+$links-underlined:          false;
+$links-active-underlined:   true;
+$link-type-icons:           true;
+$link-type-colors:          true;
+
+
+// =============================================
+//                     Misc
+// =============================================
+
+$default-radius:            4px;
+
+
+// =============================================
+//                   Helpers
+// =============================================
+
+// helpers
+$positioning-classes:       true;
+$spacer-classes:            true;
+$spacer-helpers:            "padded" "pad-top" "pad-right" "pad-bottom" "pad-left"
+                            "gapped" "gap-top" "gap-right" "gap-bottom" "gap-left"
+                            "offset" "offset-top" "offset-right" "offset-bottom" "offset-left";
+$spacer-mod-classes:        true;
+$spacer-modifiers:          "half" "double" "triple";
+$size-classes:              true;
+$size-helpers:              "small" "medium" "large";
+$layout-classes:            true;
+$layout-helpers:            "inline" "inline-block" "block"
+                            "hidden"
+                            "zero"
+                            "pull-right" "pull-left" "pull-none" "clear"
+                            "center";
+$typography-classes:        true;
+$typography-helpers:        "align-top" "align-right" "align-bottom" "align-left" "align-center" "justify"
+                            "truncate";
+$border-classes:            true;
+$border-helpers:            "bordered" "border-right" "border-left" "border-top" "border-bottom";
+$radius-classes:            true;
+$radius-helpers:            "square" "round";
+$rotation-classes:          true;
+$rotation-helpers:          "rotate-90" "rotate-90-ctr" "rotate-180" "rotate-180-ctr" "rotate-270" "rotate-270-ctr" "rotate-360" "rotate-360-ctr";
+$transition-classes:        true;
+
+// =============================================
+//                  CSS Reset
+// =============================================
+
+// reset
+$global-tags:               true;
+$reset:                     true;
+$reset-elements:            "html" "body"
+                            "div" "span" "header" "footer" "aside" "nav" "menu" "main" "section" "article" "details"
+                            "h1" "h2" "h3" "h4" "h5" "h6" "p"
+                            "ol" "ul" "li" "dl" "dt" "dd"
+                            "em" "small" "big" "strong" "b" "u" "i" "sub" "sup" "del" "strike"
+                            "q" "quote" "blockquote" "cite"
+                            "time" "address"
+                            "code" "pre"
+                            "a" "img" "center" "hr"
+                            "form" "fieldset" "legend" "label" "input" "textarea" "button"
+                            "table" "caption" "tbody" "thead" "tfoot" "tr" "th" "td"
+                            "iframe" "object" "canvas" "audio" "video" "embed";

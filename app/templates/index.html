@@ -1,0 +1,277 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title><%= appname %></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<!-- build:css(.tmp) styles/main.css -->
+		<link rel="stylesheet" href="styles/main.css">
+		<!-- endbuild --><% if (includeModernizr) { %>
+		<!-- build:js scripts/vendor/modernizr.js -->
+		<script src="bower_components/modernizr/modernizr.js"></script>
+		<!-- endbuild --><% } %>
+	</head>
+	<body>
+		<!--[if lt IE 10]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<% if (compassBootstrap) { %>
+		<div class="container">
+			<div class="header">
+				<ul class="nav nav-pills pull-right">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<h3 class="text-muted"><%= appname %></h3>
+			</div>
+
+			<div class="jumbotron">
+				<h1>'Allo, 'Allo!</h1>
+				<p class="lead">Always a pleasure scaffolding your apps.</p>
+				<p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
+			</div>
+
+			<div class="row marketing">
+				<div class="col-lg-6">
+					<h4>HTML5 Boilerplate</h4>
+					<p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+
+					<h4>Bootstrap</h4>
+					<p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
+
+					<% if (includeModernizr) { %><h4>Modernizr</h4>
+					<p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
+					<% } %>
+
+					<% if (includeRequireJS) { %><h4>RequireJS</h4>
+					<p>RequireJS is a JavaScript file and module loader. It is optimized for in-browser use, but it can be used in other JavaScript environments, like Rhino and Node.</p>
+					<% } %>
+				</div>
+			</div>
+
+			<div class="footer">
+				<ul class="list-inline">
+					<li><a href="http://twitter.com/jeremie_parker" target="_blank" title="@jeremie_parker" style="text-decoration:none;"><i class="glyphicon glyphicon-bullhorn"></i></a></li>
+					<li><a href="http://github.com/p-j" target="_blank" title="@p-j" style="text-decoration:none;"><i class="glyphicon glyphicon-random"></i></a></li>
+					<li><a href="mailto:yawa@jeremie-parker.com" title="yawa@jeremie-parker.com" style="text-decoration:none; color:#E54C3B;"><i class="glyphicon glyphicon-envelope"></i></a></li>
+				</ul>
+			</div>
+
+		</div>
+		<% } else if (groundworkCSS) { // compassBootstrap %>
+		<header class="padded">
+			<div class="container">
+				<h2 class="logo"><a href="/" target="_parent"><img src="favicon.ico" alt="<%= appname %>"><%= appname %></a></h2>
+				<nav role="navigation" class="nav gap-top">
+					<ul role="menubar">
+						<li><a href="#"><i class="icon-home"></i> Home</a></li>
+						<li role="menu">
+							<button>Heading</button>
+							<ul>
+								<li><a href="#">Sub menu</a></li>
+								<li><a href="#">Sub menu</a></li>
+								<li><a href="#">Sub menu</a></li>
+							</ul>
+						</li>
+						<li role="menu">
+							<button>Another Heading</button>
+							<ul>
+								<li><a href="#" title="">Sub menu</a></li>
+								<li><a href="#" title="">Sub menu</a></li>
+								<li><a href="#" title="">Sub menu</a></li>
+								<li role="menu">
+									<button title="">Sub Heading</button>
+									<ul>
+										<li><a href="#" title="Sub sub menu">Sub sub menu</a></li>
+										<li><a href="#" title="Sub sub menu">Sub sub menu</a></li>
+										<li><a href="#" title="Sub sub menu">Sub sub menu</a></li>
+										<li><a href="#" title="Sub sub menu">Sub sub menu</a></li>
+										<li><a href="#" title="Sub sub menu">Sub sub menu</a></li>
+										<li><a href="#" title="Sub sub menu">Sub sub menu</a></li>
+										<li><a href="#" title="Sub sub menu">Sub sub menu</a></li>
+									</ul>
+								</li>
+								<li><a href="#" title="">Sub menu</a></li>
+								<li><a href="#" title="">Sub menu</a></li>
+								<li><a href="#" title="">Sub menu</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="container">
+			<div class="padded">
+				<div class="row">
+					<div class="three fifths bounceInRight animated">
+						<h1 class="zero museo-slab">Bonjour le monde !</h1>
+						<p class="quicksand">A wonderful fresh start</p>
+					</div>
+					<div class="two fifths align-right-ipad align-right-desktop flipInX animated">
+						<p class="quicksand">Get Started</p>
+						<p><a href="#" class="green button">What a nice button <i class="icon-circle-arrow-right"></i></a></p>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="row marketing">
+				<div class="one whole padded bounceInDown animated">
+					<h1 data-compression="23.5" data-min="22" class="quicksand responsive">I just scaffolded your project with the following</h1>
+					<div class="row white box">
+						<div class="one fourth padded">
+							<h4>HTML5 Boilerplate</h4>
+							<p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+						</div>
+						<div class="one fourth padded">
+							<h4>Groundwork</h4>
+							<p>Groundwork is a fully responsive HTML5, CSS and Javascript toolkit created by <a href="http://twitter.com/ghepting">@ghepting</a></p>
+						</div><% if (includeModernizr) { %>
+						<div class="one fourth padded">
+							<h4>Modernizr</h4>
+							<p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
+						</div><% } %><% if (includeRequireJS) { %>
+						<div class="one fourth padded">
+							<h4>RequireJS</h4>
+							<p>RequireJS is a JavaScript file and module loader. It is optimized for in-browser use, but it can be used in other JavaScript environments, like Rhino and Node.</p>
+						</div><% } %>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="one whole padded bounceInLeft animated">
+					<h1 data-compression="23.5" data-min="22" class="quicksand responsive">A word about Groundwork</h1>
+					<h4>Responsive HTML5, CSS and Javascript Framework for creating scalable, accessible web applications that work on virtually anything.</h4>
+					<div class="row white box">
+						<div class="three-up two-up-small-tablet padded">
+							<h4 class="zero"><i class="icon-th icon-2x gap-right"></i> Grid System</h4>
+							<p>A highly configurable, nestable, fractions-based, responsive & adaptive, fluid grid layout system</p>
+						</div>
+						<div class="three-up two-up-small-tablet padded">
+							<h4 class="zero"><i class="icon-tablet icon-2x gap-right"></i> Works Everywhere</h4>
+							<p>Works on virtually everything &mdash; mobile phones, tablets, notebooks, desktops, retina and big screens</p>
+						</div>
+						<div class="three-up two-up-small-tablet padded">
+							<h4 class="zero"><i class="icon-plus-sign-alt icon-2x gap-right"></i> Highly Accessible</h4>
+							<p>Built with a focus on accessibility, supporting <abbr title="Accessible Rich Internet Applications">ARIA</abbr> state/role and semantic element selectors</p>
+						</div>
+						<div class="three-up two-up-small-tablet padded">
+							<h4 class="zero"><i class="icon-thumbs-up icon-2x gap-right"></i> Semantic</h4>
+							<p>Supports semantic markup with <abbr title="Accessible Rich Internet Applications">ARIA</abbr> attribute selectors, using Sass' @extend, @mixins, %placeholders & more</p>
+						</div>
+						<div class="three-up two-up-small-tablet padded">
+							<h4 class="zero"><i class="icon-magic icon-2x gap-right"></i> Built with Sass</h4>
+							<p>Built from the ground up with <a href="http://sass-lang.com/" target="_blank">Sass</a>, the world's most powerful CSS preprocessor</p>
+						</div>
+						<div class="three-up two-up-small-tablet padded">
+							<h4 class="zero"><i class="icon-cogs icon-2x gap-right"></i> Write Less, Do more</h4>
+							<p>Keep source code free of vendor prefixes. <a href="https://github.com/ai/autoprefixer" target="_blank">Autoprefixer</a> is a CSS postprocessor that keeps code future-friendly</p>
+						</div>
+						<div class="three-up two-up-small-tablet padded">
+							<h4 class="zero"><i class="icon-edit-sign icon-2x gap-right"></i> Customizable</h4>
+							<p>Easy to customize, and add your own styles and bolt on additional functionality</p>
+						</div>
+						<div class="three-up two-up-small-tablet padded">
+							<h4 class="zero"><i class="icon-text-width icon-2x gap-right"></i> Responsive Text</h4>
+							<p>Includes the tools you need to create responsive headings, responsive text blocks and responsive tables</p>
+						</div>
+						<div class="three-up two-up-small-tablet padded">
+							<h4 class="zero"><i class="icon-star icon-2x gap-right"></i> Rapid Prototyping</h4>
+							<p>Rapid prototyping and wireframes with dynamic placeholder text, images and fonts</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="gap-top bounceInUp animated">
+			<div class="box square charcoal">
+				<div class="container padded">
+					<div class="row">
+						<div class="one small-tablet fourth padded">
+							<h5 class="green">Heading</h5>
+							<ul class="unstyled">
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+							</ul>
+						</div>
+						<div class="three small-tablet fourths padded">
+							<h5 class="blue">Heading</h5>
+							<ul class="unstyled three-column two-column-mobile">
+								<li><a href="#" title="Lorem">Lorem</a></li>
+								<li><a href="#" title="ipsum">ipsum</a></li>
+								<li><a href="#" title="dolor">dolor</a></li>
+								<li><a href="#" title="sit">sit</a></li>
+								<li><a href="#" title="amet,">amet,</a></li>
+								<li><a href="#" title="consectetur">consectetur</a></li>
+								<li><a href="#" title="adipisicing">adipisicing</a></li>
+								<li><a href="#" title="elit,">elit,</a></li>
+								<li><a href="#" title="sed">sed</a></li>
+								<li><a href="#" title="do">do</a></li>
+								<li><a href="#" title="eiusmod">eiusmod</a></li>
+								<li><a href="#" title="tempor">tempor</a></li>
+								<li><a href="#" title="incididunt">incididunt</a></li>
+								<li><a href="#" title="ut">ut</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box square">
+				<div class="container padded">
+					<div class="row">
+						<div class="one half padded">
+
+						</div>
+						<div class="one half padded">
+							<p class="large padded align-right align-center-small-tablet">
+								<a href="http://twitter.com/jeremie_parker" target="_blank" title="@jeremie_parker" style="text-decoration:none;" class="large inline gapped"></a>
+								<a href="http://github.com/p-j" target="_blank" title="@p-j" style="text-decoration:none;" class="large inline gapped"></a>
+								<a href="mailto:yawa@jeremie-parker.com" title="yawa@jeremie-parker.com" style="text-decoration:none; color:#E54C3B;" class="large inline gapped"></a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<% } else { // groundworkCSS %>
+		<div class="hero-unit">
+			<h1>'Allo, 'Allo!</h1>
+			<p>You now have</p>
+			<ul>
+				<li>HTML5 Boilerplate</li>
+				<% if (includeModernizr) { %><li>Modernizr</li><% } %>
+				<% if (includeRequireJS) { %><li>RequireJS</li><% } %>
+			</ul>
+			Generator created and maintained by <a href="http://twitter.com/jeremie_parker" target="_blank" title="@jeremie_parker" style="text-decoration:none;" class="large inline gapped">@jeremie_parker</a>
+			<a href="http://github.com/p-j" target="_blank" title="@p-j" style="text-decoration:none;" class="large inline gapped">p-j</a>
+			<a href="mailto:yawa@jeremie-parker.com" title="yawa@jeremie-parker.com" style="text-decoration:none; color:#E54C3B;" class="large inline gapped"></a>
+		</div>
+		<% } // uiFrameworks %>
+
+
+
+		<!-- build:js scripts/vendor.js -->
+		<!-- bower:js -->
+		<script src="bower_components/jquery/jquery.js"></script>
+		<!-- endbower -->
+		<!-- endbuild -->
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+			e.src='//www.google-analytics.com/analytics.js';
+			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+			ga('create','UA-XXXXX-X');ga('send','pageview');
+		</script>
+	</body>
+</html>

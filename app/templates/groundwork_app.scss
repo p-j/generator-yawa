@@ -1,0 +1,19 @@
+$images_path: "images/";
+$fonts_path:  "fonts/";
+// Your Style Here
+.logo {
+	position: relative;
+	top: -0.5em;
+}
+
+.logo a, .logo a:visited {
+	text-decoration: none;
+	color: $font-color;
+}
+
+.logo img {
+	height: 2em;
+	position: relative;
+	top: 0.55em;
+	margin-right: 0.3em;
+}
