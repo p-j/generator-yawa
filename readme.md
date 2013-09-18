@@ -34,6 +34,9 @@ For more information on what `generator-yawa` can do for you, take a look at the
 
   Defaults to `mocha`. Can be switched for another supported testing framework like `jasmine`.
 
+## TODO
+* Fix JS to make `jshint` happy
+* Investigate other template engine integration (Dust.js, Underscore, Jade...) using Assemble (or not).
 
 ## Contribute
 
