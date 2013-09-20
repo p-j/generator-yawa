@@ -29,6 +29,7 @@
   "scripts": {
     "test": "mocha --reporter spec"
   },
+  "preferGlobal": true,
   "dependencies": {
     "yeoman-generator": "~0.13.1",
     "cheerio": "~0.12.1"

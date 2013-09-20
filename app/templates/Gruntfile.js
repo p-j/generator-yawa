@@ -217,7 +217,7 @@ module.exports = function (grunt) {
                 // Options: https://github.com/jrburke/r.js/blob/master/build/example.build.js
                 options: {
                     // `name` and `out` is set by grunt-usemin
-                    baseUrl: '<%%= yeoman.app %>/scripts',
+                    baseUrl: '.tmp/scripts',
                     optimize: 'none',
                     // TODO: Figure out how to make sourcemaps work with grunt-usemin
                     // https://github.com/yeoman/grunt-usemin/issues/30
@@ -362,7 +362,22 @@ module.exports = function (grunt) {
                 cwd: '<%%= yeoman.app %>/styles',
                 dest: '.tmp/styles/',
                 src: '{,*/}*.css'
-            }
+            }<% if (includeRequireJS) { %>,
+            scripts: {
+                files:[{
+                    expand: true,
+                    dot: true,
+                    cwd: '<%%= yeoman.app %>/scripts',
+                    dest: '.tmp/scripts/',
+                    src: '{,*/}*.js'
+                }, {
+                    expand: true,
+                    dot: true,
+                    cwd: '<%%= yeoman.app %>',
+                    dest: '.tmp',
+                    src: ['bower_components/**']
+                }]
+            }<% } %>
         },<% if (includeModernizr) { %>
         modernizr: {
             devFile: '<%%= yeoman.app %>/bower_components/modernizr/modernizr.js',
@@ -432,7 +447,8 @@ module.exports = function (grunt) {
         grunt.task.run([
             'clean:server',
             'concurrent:server',
-            'autoprefixer',
+            'autoprefixer',<% if (includeRequireJS) { %>
+            'copy:scripts',<% } %>
             'connect:livereload',
             'watch'
         ]);
@@ -453,6 +469,7 @@ module.exports = function (grunt) {
         'useminPrepare',
         'concurrent:dist',
         'autoprefixer',<% if (includeRequireJS) { %>
+        'copy:scripts',
         'requirejs',<% } %>
         'concat',
         'cssmin',
