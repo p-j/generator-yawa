@@ -13,17 +13,17 @@ require.config({
         bootstrapTab: '../bower_components/sass-bootstrap/js/tab',
         bootstrapTooltip: '../bower_components/sass-bootstrap/js/tooltip',
         bootstrapTransition: '../bower_components/sass-bootstrap/js/transition'<% } else if (groundworkCSS) { %>,
-        jqueryPlaceholderText: '../bower_components/groundwork/js/plugins/jquery-placeholderText',
-        jqueryResponsiveTables: '../bower_components/groundwork/js/plugins/jquery-responsiveTables',
-        jqueryResponsiveText: '../bower_components/groundwork/js/plugins/jquery-responsiveText',
-        jqueryTruncateLines: '../bower_components/groundwork/js/plugins/jquery-truncateLines',
-        groundworkChecklists: '../bower_components/groundwork/js/components/checklists',
-        groundworkDismissible: '../bower_components/groundwork/js/components/dismissible',
-        groundworkEqualizeColumns: '../bower_components/groundwork/js/components/equalizeColumns',
-        groundworkForms: '../bower_components/groundwork/js/components/forms',
-        groundworkMenus: '../bower_components/groundwork/js/components/menus',
-        groundworkNavigation: '../bower_components/groundwork/js/components/navigation',
-        groundworkTabs: '../bower_components/groundwork/js/components/tabs'<% } %>
+        jqueryPlaceholderText: '../../.tmp/scripts/plugins/jquery-placeholderText',
+        jqueryResponsiveTables: '../../.tmp/scripts/plugins/jquery-responsiveTables',
+        jqueryResponsiveText: '../../.tmp/scripts/plugins/jquery-responsiveText',
+        jqueryTruncateLines: '../../.tmp/scripts/plugins/jquery-truncateLines',
+        groundworkChecklists: '../../.tmp/scripts/components/checklists',
+        groundworkDismissible: '../../.tmp/scripts/components/dismissible',
+        groundworkEqualizeColumns: '../../.tmp/scripts/components/equalizeColumns',
+        groundworkForms: '../../.tmp/scripts/components/forms',
+        groundworkMenus: '../../.tmp/scripts/components/menus',
+        groundworkNavigation: '../../.tmp/scripts/components/navigation',
+        groundworkTabs: '../../.tmp/scripts/components/tabs'<% } %>
     }<% if (compassBootstrap || groundworkCSS) { %>,
     shim: {<% if (compassBootstrap) { %>
         bootstrapAffix: {
@@ -112,41 +112,42 @@ require([
         'groundworkMenus',
         'groundworkNavigation',
         'groundworkTabs'<% } %>
-        ], function (app, $) {
-    'use strict';
-    var DEBUG = true;
-    // Prevent console call to throw errors on old browser
-    // Mute console when DEBUG is set to true
-    // TODO: turn DEBUG to false on grunt:build
-    if (DEBUG === false || !window.console) {
-        window.console = {
-            assert                    : function() {},
-            clear                     : function() {},
-            count                     : function() {},
-            debug                     : function() {},
-            dir                       : function() {},
-            dirxml                    : function() {},
-            error                     : function() {},
-            exception                 : function() {},
-            group                     : function() {},
-            groupCollapsed            : function() {},
-            groupEnd                  : function() {},
-            info                      : function() {},
-            log                       : function() {},
-            markTimeLine              : function() {},
-            msIsIndependentlyComposed : function() {},
-            profile                   : function() {},
-            profileEnd                : function() {},
-            table                     : function() {},
-            time                      : function() {},
-            timeEnd                   : function() {},
-            timeStamp                 : function() {},
-            trace                     : function() {},
-            warn                      : function() {}
-        };
-    }
+    ], function (app, $) {
+        'use strict';
+        var DEBUG = true;
+        // Prevent console call to throw errors on old browser
+        // Mute console when DEBUG is set to true
+        // TODO: turn DEBUG to false on grunt:build
+        if (DEBUG === false || !window.console) {
+            window.console = {
+                assert                    : function() {},
+                clear                     : function() {},
+                count                     : function() {},
+                debug                     : function() {},
+                dir                       : function() {},
+                dirxml                    : function() {},
+                error                     : function() {},
+                exception                 : function() {},
+                group                     : function() {},
+                groupCollapsed            : function() {},
+                groupEnd                  : function() {},
+                info                      : function() {},
+                log                       : function() {},
+                markTimeLine              : function() {},
+                msIsIndependentlyComposed : function() {},
+                profile                   : function() {},
+                profileEnd                : function() {},
+                table                     : function() {},
+                time                      : function() {},
+                timeEnd                   : function() {},
+                timeStamp                 : function() {},
+                trace                     : function() {},
+                warn                      : function() {}
+            };
+        }
 
-    // use app here
-    console.log(app);
-    console.log('Running jQuery %s', $().jquery);
-});
+        // use app here
+        console.log(app);
+        console.log('Running jQuery %s', $().jquery);
+    }
+);

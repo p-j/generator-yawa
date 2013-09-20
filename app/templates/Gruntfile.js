@@ -193,7 +193,7 @@ module.exports = function (grunt) {
                         compress: false
                     },
                     files: {
-                        '.tmp/styles/*.css': '.tmp/styles/*.css'
+                        '.tmp/styles/main.css': '.tmp/styles/*.css'
                     }
                 }
             },
@@ -203,7 +203,7 @@ module.exports = function (grunt) {
                     compress: true
                 },
                 files: {
-                    '<%%= yeoman.dist %>/styles/*.css': '<%%= yeoman.dist %>/styles/*.css'
+                    '<%%= yeoman.dist %>/styles/main.css': '<%%= yeoman.dist %>/styles/*.css'
                 }
             }
         },
