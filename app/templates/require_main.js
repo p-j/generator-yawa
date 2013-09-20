@@ -116,7 +116,7 @@ require([
         'use strict';
         var DEBUG = true;
         // Prevent console call to throw errors on old browser
-        // Mute console when DEBUG is set to true
+        // Mute console when DEBUG is set to false
         // TODO: turn DEBUG to false on grunt:build
         if (DEBUG === false || !window.console) {
             window.console = {
