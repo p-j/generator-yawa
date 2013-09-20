@@ -1,6 +1,6 @@
 {
   "name": "generator-yawa",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "Scaffold out a front-end web app",
   "keywords": [
     "yeoman-generator",
@@ -8,7 +8,10 @@
     "app",
     "front-end",
     "h5bp",
-    "modernizr"
+    "modernizr",
+    "groundwork",
+    "bootstrap",
+    "assemble"
   ],
   "homepage": "https://github.com/p-j/generator-yawa",
   "bugs": "https://github.com/p-j/generator-yawa/issues",
@@ -43,7 +46,7 @@
   },
   "licenses": [
     {
-      "type": "MIT"
+      "type": "BSD"
     }
   ]
 }
