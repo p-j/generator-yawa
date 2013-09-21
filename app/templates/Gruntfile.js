@@ -22,7 +22,7 @@ module.exports = function (grunt) {
         watch: {
             coffee: {
                 files: ['<%%= yeoman.app %>/scripts/{,*/}*.coffee'],
-                tasks: ['coffee:dist']
+                tasks: ['clean:scripts', 'coffee:dist', 'copy:scripts']
             },
             coffeeTest: {
                 files: ['test/spec/{,*/}*.coffee'],
@@ -93,7 +93,8 @@ module.exports = function (grunt) {
                     ]
                 }]
             },
-            server: '.tmp'
+            server: '.tmp',
+            scripts: '.tmp/scripts/*'
         },
         jshint: {
             options: {
@@ -129,13 +130,13 @@ module.exports = function (grunt) {
                     src: '{,*/}*.coffee',
                     dest: '.tmp/scripts',
                     ext: '.js'
-                }, {
+                }<% if (groundworkCSS) { %>, {
                     expand: true,
                     cwd: '<%%= yeoman.app %>/bower_components/groundwork/src/coffee',
                     src: '{,*/}*.coffee',
                     dest: '.tmp/scripts',
                     ext: '.js'
-                }]
+                }<% } %>]
             },
             test: {
                 files: [{
