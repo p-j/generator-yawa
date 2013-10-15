@@ -1,6 +1,6 @@
 {
   "name": "generator-yawa",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "description": "Scaffold out a front-end web app",
   "keywords": [
     "yeoman-generator",
