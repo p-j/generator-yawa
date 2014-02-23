@@ -2,7 +2,7 @@ Description:
     Creates a new basic front-end web application.
 
 Options:
-    Twitter Bootstrap: Include Twitter Bootstrap for Sass
+    Bootstrap: Include Bootstrap for Sass
     Groundwork: Include Groundwork, a SASS/Coffee framework
     RequireJS: Add support for AMD-loading via RequireJS
     Modernizr

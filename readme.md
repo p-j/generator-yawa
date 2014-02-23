@@ -12,7 +12,7 @@ Yeoman generator that scaffolds out a front-end web app, based on the official [
 * Awesome Image Optimization (via OptiPNG, pngquant, jpegtran and gifsicle)
 * Mocha Unit Testing with PhantomJS
 * Optional - RequireJS
-* Optional - Twitter Bootstrap for SASS
+* Optional - Bootstrap for SASS
 * Optional - Leaner Modernizr builds
 * Optional - [GroundworkCSS](https://github.com/groundworkcss/groundwork) : a fully responsive HTML5, CSS and Javascript toolkit created by [@ghepting](https://twitter.com/ghepting).
 
