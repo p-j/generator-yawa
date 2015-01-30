@@ -172,7 +172,7 @@ YawaGenerator.prototype.writeIndex = function writeIndex() {
 
 		if (!this.includeRequireJS) {
 			if (this.compassBootstrap) {
-				// wire Twitter Bootstrap plugins
+				// wire Bootstrap plugins
 				this.layoutFile = this.appendScripts(this.layoutFile, 'scripts/plugins.js', [
 					'bower_components/sass-bootstrap/js/affix.js',
 					'bower_components/sass-bootstrap/js/alert.js',
@@ -224,7 +224,7 @@ YawaGenerator.prototype.writeIndex = function writeIndex() {
 
 		if (!this.includeRequireJS) {
 			if (this.compassBootstrap) {
-				// wire Twitter Bootstrap plugins
+				// wire Bootstrap plugins
 				this.indexFile = this.appendScripts(this.indexFile, 'scripts/plugins.js', [
 					'bower_components/sass-bootstrap/js/affix.js',
 					'bower_components/sass-bootstrap/js/alert.js',
