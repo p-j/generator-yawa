@@ -22,90 +22,81 @@ $fonts_path:     $bower_path + "fonts/";                      // path to fonts (
 $boxsizing_path: "/" + $bower_path + "js/libs/boxsizing.htc"; // path to box sizing polyfill (change to absolute path from HTML document root)
 $PIE_path:       "/" + $bower_path + "js/libs/PIE.htc";       // path to IE CSS3 polyfill (change to absolute path from HTML document root)
 
-// =============================================
-//                Core - REQUIRED
-// =============================================
-@import "groundwork/src/scss/core/all-core";
-// @import "compass";
-// @import "groundwork/src/scss/core/constants";
-// @import "groundwork/src/scss/core/breakpoints";
-// @import "groundwork/src/scss/core/defaults";
-// @import "groundwork/src/scss/core/palette";
-// @import "groundwork/src/scss/core/mixins-core";
 
-// =============================================
-//                 Base - REQUIRED
-// =============================================
-@import "groundwork/src/scss/base/all-base";
-// @import "groundwork/src/scss/base/reset";
-// @import "groundwork/src/scss/base/global";
-// @import "groundwork/src/scss/base/helpers";
-// @import "groundwork/src/scss/base/grid";
-// @import "groundwork/src/scss/base/flex-box";
+// ============================================
+//       GroundworkCSS by Gary Hepting
+//          Last Updated:2013-8-16
+// ============================================
 
-// =============================================
-//                Components
-// =============================================
+//---------- CUSTOM SETTINGS: ----------//
+@import "groundwork/src/sass/settings";
 
-// * Icons
-@import "groundwork/src/scss/icons/all-icons";
-// @import "groundwork/src/scss/icons/font-awesome";
+// customizable settings
 
-// * Type
-@import "groundwork/src/scss/type/all-type";
-// @import "groundwork/src/scss/type/link-type-icons";
-// @import "groundwork/src/scss/type/typography";
-// @import "groundwork/src/scss/type/webfonts";
+//-------- REQUIRED COMPONENTS: --------//
+@import "groundwork/src/sass/core/all-core";
 
-// * UI elements
-@import "groundwork/src/scss/ui/all-ui";
-// @import "groundwork/src/scss/ui/boxes";
-// @import "groundwork/src/scss/ui/buttons";
-// @import "groundwork/src/scss/ui/forms";
-// @import "groundwork/src/scss/ui/messages";
-// @import "groundwork/src/scss/ui/nav";
-// @import "groundwork/src/scss/ui/tables";
-// @import "groundwork/src/scss/ui/tabs";
+// constants, defaults, mixins, breakpoints, color palette
+@import "groundwork/src/sass/base/all-base";
 
-// * Animations
-@import "groundwork/src/scss/anim/all-animations";
-// $dismiss-animation: "fadeOut" !default; // Overriden in _settings.scss if needed
-// body {
-//   -webkit-backface-visibility: hidden; /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
-// }
-// .animated {
-//   animation-duration: 1s;
-//   animation-fill-mode: both;
-// }
-// .dismiss {
-//   @extend .#{$dismiss-animation};
-// }
-// @import "groundwork/src/scss/anim/bounce";
-// @import "groundwork/src/scss/anim/fade";
-// @import "groundwork/src/scss/anim/flash";
-// @import "groundwork/src/scss/anim/flip";
-// @import "groundwork/src/scss/anim/hinge";
-// @import "groundwork/src/scss/anim/lightspeed";
-// @import "groundwork/src/scss/anim/pulse";
-// @import "groundwork/src/scss/anim/roll";
-// @import "groundwork/src/scss/anim/rotate";
-// @import "groundwork/src/scss/anim/shake";
-// @import "groundwork/src/scss/anim/spin";
-// @import "groundwork/src/scss/anim/swing";
-// @import "groundwork/src/scss/anim/tada";
-// @import "groundwork/src/scss/anim/wiggle";
-// @import "groundwork/src/scss/anim/wobble";
+// reset, globals, grid, flexbox, helpers
+@import "groundwork/src/sass/icons/all-icons";
 
-// =============================================
-//           Responsive adjustments
-// =============================================
-@import "groundwork/src/scss/responsive/all-responsive";
-// $responsive: true !default; // Overriden in _settings.scss if needed
-// @import "groundwork/src/scss/responsive/helpers-responsive";
-// @import "groundwork/src/scss/responsive/desktop";
-// @import "groundwork/src/scss/responsive/ipad";
-// @import "groundwork/src/scss/responsive/small-tablet";
-// @import "groundwork/src/scss/responsive/mobile";
+// font awesome icons
 
-// Your App style
+//-------- OPTIONAL COMPONENTS: --------//
+
+// Typography
+@import "groundwork/src/sass/type/all-type";
+
+// individual typography modules
+// @import "type/link-type-icons";
+// @import "type/typography";
+// @import "type/webfonts";
+
+// UI
+@import "groundwork/src/sass/ui/all-ui";
+
+// individual UI modules
+// @import "ui/boxes";
+// @import "ui/buttons";
+// @import "ui/forms";
+// @import "ui/messages";
+// @import "ui/nav";
+// @import "ui/tables";
+// @import "ui/tabs";
+
+// Animations
+@import "groundwork/src/sass/anim/all-animations";
+
+// individual animation modules
+// @import "anim/bounce";
+// @import "anim/fade";
+// @import "anim/flash";
+// @import "anim/flip";
+// @import "anim/hinge";
+// @import "anim/lightspeed";
+// @import "anim/pulse";
+// @import "anim/roll";
+// @import "anim/rotate";
+// @import "anim/shake";
+// @import "anim/spin";
+// @import "anim/swing";
+// @import "anim/tada";
+// @import "anim/wiggle";
+// @import "anim/wobble";
+// @import "anim/slide";
+
+// Responsive Components
+@import "groundwork/src/sass/responsive/all-responsive";
+
+// individual responsive modules
+// @import "responsive/helpers-responsive";
+// @import "responsive/desktop";
+// @import "responsive/ipad";
+// @import "responsive/small-tablet";
+// @import "responsive/mobile";
+
+
+
 @import "app";

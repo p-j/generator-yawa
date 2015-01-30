@@ -2,6 +2,15 @@
 
 Yeoman generator that scaffolds out a front-end web app, based on the official [webapp generator](https://github.com/yeoman/generator-webapp).
 
+## Dependencies
+
+This project depends on a few others that needs to be installed seperatly :
+- To run
+  - `yo` (install : `npm install -g yo`)
+- To be usefull (ie: to run the project scaffolded with it)
+  - `grunt` (install : `npm install -g grunt-cli`)
+  - `compass` (install : `gem install compass`)
+
 ## Features
 * [Assemble](https://github.com/assemble/assemble)
 * CSS Autoprefixing (new)
