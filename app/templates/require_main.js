@@ -1,6 +1,6 @@
 require.config({
     paths: {
-        jquery: '../bower_components/jquery/jquery'<% if (compassBootstrap) { %>,
+        jquery: '../bower_components/jquery/dist/jquery'<% if (compassBootstrap) { %>,
         bootstrapAffix: '../bower_components/sass-bootstrap/js/affix',
         bootstrapAlert: '../bower_components/sass-bootstrap/js/alert',
         bootstrapButton: '../bower_components/sass-bootstrap/js/button',
